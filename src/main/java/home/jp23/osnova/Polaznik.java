@@ -2,8 +2,10 @@ package home.jp23.osnova;
 
 import javax.persistence.Entity;
 import javax.persistence.ManyToOne;
+import javax.persistence.Table;
 
 @Entity
+@Table (name = "polaznik")
 public class Polaznik extends Entitet {
     
     @ManyToOne

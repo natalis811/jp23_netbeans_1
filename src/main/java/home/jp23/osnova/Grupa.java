@@ -8,10 +8,11 @@ import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
+import javax.persistence.Table;
 
 
 @Entity
-
+@Table (name = "grupa")
 public class Grupa extends Entitet {
     
     private String naziv;
@@ -28,7 +29,7 @@ public class Grupa extends Entitet {
     
     @ManyToMany
     @JoinTable(
-        name = "Clan", 
+        name = "clan", 
         joinColumns = { @JoinColumn(name = "grupa_id") }, 
         inverseJoinColumns = { @JoinColumn(name = "polaznik_id") }
     )

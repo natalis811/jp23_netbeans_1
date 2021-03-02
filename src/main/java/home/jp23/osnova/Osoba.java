@@ -6,12 +6,14 @@
 package home.jp23.osnova;
 
 import javax.persistence.Entity;
+import javax.persistence.Table;
 
 /**
  *
  * @author natalis
  */
 @Entity
+@Table (name = "osoba")
 public class Osoba extends Entitet {
     
     private String ime;

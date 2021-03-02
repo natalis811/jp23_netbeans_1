@@ -2,8 +2,10 @@ package home.jp23.osnova;
 
 import java.math.BigDecimal;
 import javax.persistence.Entity;
+import javax.persistence.Table;
 
 @Entity
+@Table (name = "smjer")
 public class Smjer extends Entitet {
     
     private String naziv;
